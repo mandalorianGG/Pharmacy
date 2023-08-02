@@ -17,11 +17,8 @@ const TopNavigation = () => {
       className='container mx-auto flex items-center justify-center mb-[45px]'
     >
       <div className='flex items-center mr-[45px]'>
-        <Link
-          href='/'
-          className='flex items-center justify-center w-[164px] h-[64px] mr-[50px] text-center bg-gray-300'
-        >
-          Apateka
+        <Link href='/' className='mr-[50px]'>
+          <Image src='apotheke.svg' width={198} height={51} alt='apotheke' />
         </Link>
         <div className='relative overflow-hidden w-[458px] h-[45px] rounded-[3px]'>
           <Image
