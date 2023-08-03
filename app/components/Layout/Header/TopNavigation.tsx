@@ -14,9 +14,9 @@ const TopNavigation = () => {
   return (
     <nav
       id='top__navigation'
-      className='container mx-auto flex items-center justify-center mb-[45px]'
+      className='container mx-auto flex items-center justify-between mb-[45px]'
     >
-      <div className='flex items-center mr-[45px]'>
+      <div className='flex items-center'>
         <Link href='/' className='mr-[50px]'>
           <Image src='apotheke.svg' width={198} height={51} alt='apotheke' />
         </Link>
@@ -38,15 +38,15 @@ const TopNavigation = () => {
           </button>
         </div>
       </div>
-      <ul className='flex items-center'>
-        <li className='flex items-center h-[32px] mr-[46px]'>
+      <ul className='flex items-center justify-between gap-[30px]'>
+        <li className='flex items-center h-[32px]'>
           <HiPhone size={26} className='mr-2 text-[#009432]' />
           <p className='text-[13px] text-[#535353] leading-tight'>
             <span className='block'>Kontaktná infolinka</span>
             <span>+420 776 766 373 (9:00 – 17:00)</span>
           </p>
         </li>
-        <li className='flex items-center h-[32px] mr-[30px]'>
+        <li className='flex items-center h-[32px]'>
           <HiOutlineHeart size={26} className='mr-2 text-[#535353]' />
           <Link href='/' className='text-[14px] text-[#535353]'>
             Obľúbené
