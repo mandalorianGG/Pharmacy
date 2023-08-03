@@ -5,51 +5,45 @@ import { AiOutlinePercentage } from 'react-icons/ai'
 
 const BottomNavigation = () => {
   return (
-    <ul
-      id='bottom__navigation'
-      className='container overflow-hidden mx-auto flex items-center gap-[20px] h-[46px] pl-[26px] rounded-[3px] bg-[#009432]'
-    >
-      <li className='text-[14px] leading-[22px] tracking-[-0.14px] font-medium text-white'>
-        <Link href='/' className='flex items-center gap-[8px]'>
+    <ul id='bottom__navigation'>
+      <li>
+        <Link href='/'>
           <span>Vitamíny a minerály</span>
-          <HiChevronDown size={18} classname='text-white ml-2' />
+          <HiChevronDown size={18} />
         </Link>
       </li>
-      <li className='text-[14px] leading-[22px] tracking-[-0.14px] font-medium text-white'>
-        <Link href='/' className='flex items-center gap-[8px]'>
+      <li>
+        <Link href='/'>
           <span>Zdravá výživa a chudnutie</span>
-          <HiChevronDown size={18} classname='text-white ml-2' />
+          <HiChevronDown size={18} />
         </Link>
       </li>
-      <li className='text-[14px] leading-[22px] tracking-[-0.14px] font-medium text-white'>
-        <Link href='/' className='flex items-center gap-[8px]'>
+      <li>
+        <Link href='/'>
           <span>Doplnky stravy</span>
-          <HiChevronDown size={18} className='text-white ml-2' />
+          <HiChevronDown size={18} />
         </Link>
       </li>
-      <li className='text-[14px] leading-[22px] tracking-[-0.14px] font-medium text-white'>
-        <Link href='/' className='flex items-center gap-[8px]'>
+      <li>
+        <Link href='/'>
           <span>Pre deti a mamičky</span>
-          <HiChevronDown size={18} classname='text-white ml-2' />
+          <HiChevronDown size={18} />
         </Link>
       </li>
-      <li className='text-[14px] leading-[22px] tracking-[-0.14px] font-medium text-white'>
-        <Link href='/' className='flex items-center gap-[8px]'>
+      <li>
+        <Link href='/'>
           <span>Krása a hygiena</span>
-          <HiChevronDown size={18} className='text-white ml-2' />
+          <HiChevronDown size={18} />
         </Link>
       </li>
-      <li className='text-[14px] leading-[22px] tracking-[-0.14px] font-medium text-white'>
-        <Link href='/' className='flex items-center gap-[8px]'>
+      <li>
+        <Link href='/'>
           <span>Zdravotnícke potreby</span>
-          <HiChevronDown size={18} classname='text-white ml-2' />
+          <HiChevronDown size={18} />
         </Link>
       </li>
-      <li className='h-full flex items-center justify-center grow bg-[#ffc312]'>
-        <Link
-          href='/'
-          className='flex items-center gap-[6px] text-[14px] text-white font-semibold'
-        >
+      <li className='sales__button'>
+        <Link href='/'>
           <AiOutlinePercentage size={26} />
           <span>Akcie a výpredaj</span>
         </Link>

@@ -12,10 +12,7 @@ import {
 
 const TopNavigation = () => {
   return (
-    <nav
-      id='top__navigation'
-      className='container mx-auto flex items-center justify-between mb-[45px]'
-    >
+    <nav id='top__navigation'>
       <div className='flex items-center'>
         <Link href='/' className='mr-[50px]'>
           <Image src='apotheke.svg' width={198} height={51} alt='apotheke' />
@@ -29,35 +26,29 @@ const TopNavigation = () => {
             alt='search'
           />
           <input
-            className='h-full w-full text-[14px] placeholder-[#595959] font-normal pl-[45px]'
+            className='h-full w-full text-[14px] placeholder-primary font-normal pl-[45px]'
             type='text'
             placeholder='Tu zadajte čo hľadáte...'
           />
-          <button className='absolute top-0 right-0 w-[71px] h-[45px] bg-[#009432] text-white text-[14px] font-semibold'>
-            Hľadať
-          </button>
+          <button className='primary__button search__button'>Hľadať</button>
         </div>
       </div>
-      <ul className='flex items-center justify-between gap-[30px]'>
-        <li className='flex items-center h-[32px]'>
-          <HiPhone size={26} className='mr-2 text-[#009432]' />
-          <p className='text-[13px] text-[#535353] leading-tight'>
+      <ul>
+        <li>
+          <HiPhone size={26} className='mr-2 text-secondary' />
+          <p className='text-[13px] text-primary leading-tight'>
             <span className='block'>Kontaktná infolinka</span>
             <span>+420 776 766 373 (9:00 – 17:00)</span>
           </p>
         </li>
-        <li className='flex items-center h-[32px]'>
-          <HiOutlineHeart size={26} className='mr-2 text-[#535353]' />
-          <Link href='/' className='text-[14px] text-[#535353]'>
-            Obľúbené
-          </Link>
+        <li>
+          <HiOutlineHeart size={26} />
+          <Link href='/'>Obľúbené</Link>
         </li>
-        <li className='flex items-center h-[32px]'>
-          <HiOutlineUser size={26} className='mr-2 text-[#535353]' />
-          <Link href='/' className='text-[14px] text-[#535353]'>
-            Môj účet
-          </Link>
-          <HiChevronDown size={18} className='ml-2 text-[#535353]' />
+        <li>
+          <HiOutlineUser size={26} />
+          <Link href='/'>Môj účet</Link>
+          <HiChevronDown size={18} className='ml-2' />
         </li>
       </ul>
     </nav>
