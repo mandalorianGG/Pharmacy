@@ -24,7 +24,7 @@ const BottomNavigation = () => {
       <li className='text-[14px] leading-[22px] tracking-[-0.14px] font-medium text-white'>
         <Link href='/' className='flex items-center gap-[8px]'>
           <span>Doplnky stravy</span>
-          <HiChevronDown size={18} classname='text-white ml-2' />
+          <HiChevronDown size={18} className='text-white ml-2' />
         </Link>
       </li>
       <li className='text-[14px] leading-[22px] tracking-[-0.14px] font-medium text-white'>
