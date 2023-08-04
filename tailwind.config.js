@@ -21,6 +21,12 @@ module.exports = {
         warning: '#ffc312',
       },
     },
+    variants: {
+      extend: {
+        backgroundColor: ['group-hover'],
+        textColor: ['group-hover'],
+      },
+    },
   },
   plugins: [],
 }

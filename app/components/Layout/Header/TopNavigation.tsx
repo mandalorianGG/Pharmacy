@@ -42,13 +42,17 @@ const TopNavigation = () => {
           </p>
         </li>
         <li>
-          <HiOutlineHeart size={26} />
-          <Link href='/'>Obľúbené</Link>
+          <Link href='/'>
+            <HiOutlineHeart size={26} />
+            <span>Obľúbené</span>
+          </Link>
         </li>
         <li>
-          <HiOutlineUser size={26} />
-          <Link href='/'>Môj účet</Link>
-          <HiChevronDown size={18} className='ml-2' />
+          <Link href='/'>
+            <HiOutlineUser size={26} />
+            <span>Môj účet</span>
+            <HiChevronDown size={18} className='ml-2' />
+          </Link>
         </li>
       </ul>
     </nav>

@@ -35,7 +35,11 @@ body {
 }
 
 #top__navigation ul li a {
-  @apply text-[14px] text-primary;
+  @apply flex items-center text-[14px] text-primary;
+}
+
+#top__navigation ul li:not(:first-of-type) a:hover > * {
+  color: black;
 }
 
 #top__navigation .search__button {
