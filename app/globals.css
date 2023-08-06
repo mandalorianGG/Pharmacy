@@ -19,11 +19,11 @@ body {
 /* Header */
 
 #top__navigation {
-  @apply container mx-auto flex items-center justify-between mb-[45px];
+  @apply container mx-auto flex items-center justify-between xl:mb-[45px];
 }
 
 #top__navigation ul {
-  @apply flex items-center justify-between gap-[30px] h-[32px];
+  @apply hidden xl:flex items-center justify-between gap-[30px] h-[32px];
 }
 
 #top__navigation ul li {
@@ -47,7 +47,7 @@ body {
 }
 
 #bottom__navigation {
-  @apply container overflow-hidden mx-auto flex items-center gap-[20px] h-[46px] pl-[26px] rounded-[3px] bg-secondary;
+  @apply container overflow-hidden mx-auto hidden xl:flex items-center gap-[20px] h-[46px] pl-[26px] rounded-[3px] bg-secondary;
 }
 
 #bottom__navigation li {

@@ -4,6 +4,7 @@ import React from 'react'
 
 // Icons
 import {
+  HiBars3,
   HiChevronDown,
   HiOutlineHeart,
   HiOutlineUser,
@@ -13,11 +14,11 @@ import {
 const TopNavigation = () => {
   return (
     <nav id='top__navigation'>
-      <div className='flex items-center'>
+      <div className='flex items-center grow xl:grow-0'>
         <Link href='/' className='mr-[50px]'>
           <Image src='apotheke.svg' width={198} height={51} alt='apotheke' />
         </Link>
-        <div className='relative overflow-hidden w-[458px] h-[45px] rounded-[3px]'>
+        <div className='relative overflow-hidden grow w-[458px] h-[45px] rounded-[3px]'>
           <Image
             className='absolute top-[11px] left-[11px]'
             src='/icons/search.svg'
@@ -55,6 +56,9 @@ const TopNavigation = () => {
           </Link>
         </li>
       </ul>
+      <button className='block xl:hidden ml-[50px]'>
+        <HiBars3 size={26} className='text-primary hover:text-slate-900' />
+      </button>
     </nav>
   )
 }
