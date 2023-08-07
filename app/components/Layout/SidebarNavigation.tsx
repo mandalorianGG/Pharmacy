@@ -7,6 +7,8 @@ import {
   HiXMark,
 } from 'react-icons/hi2'
 import Image from 'next/image'
+import { bottomNavLinks } from '@/app/constants/header'
+import SideNavLink from './Header/SideNavLink'
 
 const SidebarNavigation = () => {
   return (
@@ -41,42 +43,9 @@ const SidebarNavigation = () => {
             <p>Infolinka:</p>
             <p>+420 776 766 373 (9:00 – 17:00)</p>
           </li>
-          <li className='px-6 py-4 hover:text-secondary border-b'>
-            <Link href='/' className='flex items-center justify-between'>
-              Vitamíny a minerály
-              <HiChevronRight size={18} />
-            </Link>
-          </li>
-          <li className='px-6 py-4 hover:text-secondary border-b'>
-            <Link href='/' className='flex items-center justify-between'>
-              Zdravá výživa a chudnutie
-              <HiChevronRight size={18} />
-            </Link>
-          </li>
-          <li className='px-6 py-4 hover:text-secondary border-b'>
-            <Link href='/' className='flex items-center justify-between'>
-              Doplnky stravy
-              <HiChevronRight size={18} />
-            </Link>
-          </li>
-          <li className='px-6 py-4 hover:text-secondary border-b'>
-            <Link href='/' className='flex items-center justify-between'>
-              Pre deti a mamičky
-              <HiChevronRight size={18} />
-            </Link>
-          </li>
-          <li className='px-6 py-4 hover:text-secondary border-b'>
-            <Link href='/' className='flex items-center justify-between'>
-              Krása a hygiena
-              <HiChevronRight size={18} />
-            </Link>
-          </li>
-          <li className='px-6 py-4 hover:text-secondary border-b'>
-            <Link href='/' className='flex items-center justify-between'>
-              Zdravotnícke potreby
-              <HiChevronRight size={18} />
-            </Link>
-          </li>
+          {bottomNavLinks.map((link, key) => (
+            <SideNavLink key={key} path={link.path} text={link.text} />
+          ))}
           <li className='px-6 py-4 hover:text-secondary border-b'>
             <Link href='/' className='flex items-center justify-between'>
               Akcie a Výpredaj
