@@ -19,19 +19,15 @@ body {
 /* Header */
 
 #top__navigation {
-  @apply container mx-auto flex items-center justify-between xl:mb-[45px];
+  @apply container relative mx-auto flex items-center justify-between xl:mb-[45px];
 }
 
 #top__navigation ul {
-  @apply hidden xl:flex items-center justify-between gap-[30px] h-[32px];
-}
-
-#top__navigation ul li {
-  @apply flex items-center;
+  @apply flex items-center justify-between gap-4 xl:gap-[30px] h-[32px];
 }
 
 #top__navigation ul li:not(:first-of-type) svg {
-  @apply mr-2 text-primary;
+  @apply xl:mr-2 text-primary;
 }
 
 #top__navigation ul li a {
