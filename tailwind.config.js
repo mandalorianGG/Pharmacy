@@ -14,6 +14,10 @@ module.exports = {
           lg: '100%',
           xl: '1260px',
         },
+        padding: {
+          DEFAULT: '1rem',
+          xl: '0px',
+        },
       },
       colors: {
         primary: '#7C7C7C',
