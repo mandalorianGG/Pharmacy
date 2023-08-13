@@ -1,13 +1,12 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Home: React.FC = () => {
   return (
     <>
-      <section id='hero__banner' className='bg-[#f8f8f8] pb-[32px]'>
-        <div className='container mx-auto flex items-center justify-center h-[357px] bg-slate-200'>
-          hero banner
-        </div>
+      <section id='hero__banner' className='container mx-auto pb-[32px]'>
+        <Image src='/images/hero.png' width={1260} height={357} alt='hero' />
       </section>
       <section id='on__sale__products__slider'>
         <div className='container mx-auto'>
