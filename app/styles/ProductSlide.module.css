@@ -1,0 +1,35 @@
+.product__slider__image__container {
+  @apply flex items-center justify-center pb-5 border-b border-slate-100;
+}
+
+.product__slider__image__caption {
+  @apply mt-3 text-sm text-center font-semibold;
+}
+
+.product__slider__price {
+  @apply text-red-600 font-semibold;
+}
+
+.product__slider__price__before {
+  @apply line-through decoration-red-600 font-semibold text-sm;
+}
+
+.product__slider__price__dph {
+  @apply text-slate-300 text-sm;
+}
+
+.product__slider__counter__button {
+  @apply flex items-center justify-center w-9 h-9 text-xl bg-slate-100 border hover:bg-slate-200;
+}
+
+.product__slider__counter__input {
+  @apply w-9 h-9 text-center border-t border-b;
+}
+
+.product__slider__stock {
+  @apply text-secondary text-sm text-center;
+}
+
+.product__slider__button {
+  @apply w-full mt-4 bg-secondary hover:bg-secondary/90 text-white h-[45px] rounded-sm text-sm;
+}
