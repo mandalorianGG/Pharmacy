@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import OnSaleSection from './components/home/OnSaleSection'
+import OnSaleSection from '../components/home/OnSaleSection'
 
 const Home: React.FC = () => {
   return (

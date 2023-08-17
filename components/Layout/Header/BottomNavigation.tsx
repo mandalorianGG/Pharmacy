@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { AiOutlinePercentage } from 'react-icons/ai'
 import NavLink from './NavLink'
-import { bottomNavLinks } from '@/app/constants/header'
+import { bottomNavLinks } from '@/constants/header'
 
 const BottomNavigation = () => {
   return (

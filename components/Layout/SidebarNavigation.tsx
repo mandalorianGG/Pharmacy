@@ -7,7 +7,7 @@ import {
   HiXMark,
 } from 'react-icons/hi2'
 import Image from 'next/image'
-import { bottomNavLinks } from '@/app/constants/header'
+import { bottomNavLinks } from '@/constants/header'
 import SideNavLink from './Header/SideNavLink'
 
 const SidebarNavigation = () => {
