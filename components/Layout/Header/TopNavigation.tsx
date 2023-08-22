@@ -15,8 +15,8 @@ const TopNavigation = () => {
   return (
     <nav id='top__navigation'>
       <div className='flex items-center grow xl:grow-0 mr-[50px] xl:mr-0'>
-        <Link href='/' className='mr-[50px]'>
-          <Image src='apotheke.svg' width={198} height={51} alt='apotheke' />
+        <Link href='/' className='font-bold text-2xl md:text-4xl mr-[50px]'>
+          Apotheke
         </Link>
         <div className='absolute left-0 top-full w-full md:relative py-4 bg-gray-100'>
           <div className='relative overflow-hidden grow xl:w-[458px] h-[45px] rounded-[3px]'>

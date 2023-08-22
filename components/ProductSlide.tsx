@@ -9,7 +9,7 @@ const ProductSlide = () => {
         <div className={styles['product__slider__image__container']}>
           <Image
             src='/images/medicine.webp'
-            height={100}
+            height={150}
             width={150}
             alt='medicine'
           />
@@ -36,7 +36,6 @@ const ProductSlide = () => {
                 className={styles['product__slider__counter__input']}
                 type='text'
                 placeholder='1'
-                value={1}
               />
               <button
                 className={`${styles['product__slider__counter__button']} rounded-tr-sm rounded-br-sm`}
