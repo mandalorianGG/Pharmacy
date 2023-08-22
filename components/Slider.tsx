@@ -44,7 +44,8 @@ const KeenSliderComponent: React.FC = () => {
     slideChanged(slider) {
       const currentInstance = instanceRef.current
       if (currentInstance) {
-        const perView: number = currentInstance.options.slides?.perView
+        const perView = (currentInstance.options.slides as { perView?: number })
+          .perView
         if (perView !== undefined) {
           setCurrentSlide(slider.track.details.rel / perView)
         }
@@ -101,7 +102,8 @@ const KeenSliderComponent: React.FC = () => {
             ...Array(
               Math.ceil(
                 instanceRef.current.track.details.slides.length /
-                  instanceRef.current?.options.slides?.perView
+                  (instanceRef.current.options.slides as { perView?: number })
+                    ?.perView!
               )
             ).keys(),
           ].map((idx) => {
@@ -110,7 +112,12 @@ const KeenSliderComponent: React.FC = () => {
                 key={idx}
                 onClick={() => {
                   instanceRef.current?.moveToIdx(
-                    idx * instanceRef.current?.options.slides?.perView
+                    idx *
+                      (
+                        instanceRef.current.options.slides as {
+                          perView?: number
+                        }
+                      )?.perView!
                   )
                 }}
                 className={
