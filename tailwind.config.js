@@ -24,6 +24,9 @@ module.exports = {
         secondary: '#009432',
         warning: '#ffc312',
       },
+      screens: {
+        xs: '520px',
+      },
     },
     variants: {
       extend: {

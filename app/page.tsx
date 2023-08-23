@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import OnSaleSection from '../components/home/OnSaleSection'
+import CategoriesSection from '@/components/home/CategoriesSection'
 
 const Home: React.FC = () => {
   return (
@@ -10,23 +11,7 @@ const Home: React.FC = () => {
         <Image src='/images/hero.png' width={1260} height={357} alt='hero' />
       </section>
       <OnSaleSection />
-      <section id='categories' className='bg-[#f8f8f8] pb-[28px]'>
-        <div className='container mx-auto'>
-          <div
-            id='categories__banner'
-            className='h-[327px] bg-slate-200 mb-[32px] flex items-center justify-center'
-          >
-            categories banner
-          </div>
-          <div id='categories' className='grid grid-cols-5 gap-[24px]'>
-            <div className='h-[219px] bg-slate-400'></div>
-            <div className='h-[219px] bg-slate-400'></div>
-            <div className='h-[219px] bg-slate-400'></div>
-            <div className='h-[219px] bg-slate-400'></div>
-            <div className='h-[219px] bg-slate-400'></div>
-          </div>
-        </div>
-      </section>
+      <CategoriesSection />
       <section id='recommended__products__slider' className='pt-[32px]'>
         <div className='container mx-auto'>
           <div className='flex justify-between items-center mb-[24px]'>
