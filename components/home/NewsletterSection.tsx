@@ -7,7 +7,7 @@ const NewsletterSection = () => {
             <h2 className='text-2xl lg:text-2xl font-semibold text-gray-800 mb-6'>
               Registrujte sa a získajte množstvo výhod
             </h2>
-            <button className='bg-slate-900 text-white hover:bg-slate-700 rounded-[6px] sm:w-[165px] py-2'>
+            <button className='bg-slate-900 text-white hover:bg-slate-700 rounded-[6px] w-full sm:w-[165px] py-2'>
               Registrácia
             </button>
           </div>
