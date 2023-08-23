@@ -4,6 +4,7 @@ import React from 'react'
 import OnSaleSection from '../components/home/OnSaleSection'
 import CategoriesSection from '@/components/home/CategoriesSection'
 import RecommendationSection from '@/components/home/RecommendationSection'
+import NewsletterSection from '@/components/home/NewsletterSection'
 
 const Home: React.FC = () => {
   return (
@@ -14,16 +15,7 @@ const Home: React.FC = () => {
       <OnSaleSection />
       <CategoriesSection />
       <RecommendationSection />
-      <section id='newsletter'>
-        <div className='container mx-auto flex gap-[30px] h-[219px] my-[48px]'>
-          <div className='flex-1 flex items-center justify-center h-full bg-cyan-300'>
-            banner for user registration
-          </div>
-          <div className='flex-1 flex items-center justify-center h-full bg-green-300 rounded-[5px]'>
-            newsletter
-          </div>
-        </div>
-      </section>
+      <NewsletterSection />
       <section id='popular__brands' className='text-center'>
         <h3 className='text-[18px] font-bold mb-[44px]'>Obľúbené značky</h3>
         <div className='container mx-auto grid grid-cols-6 gap-[65px] h-[140px] mb-[53px]'>

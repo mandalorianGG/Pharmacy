@@ -16,6 +16,14 @@ body {
   @apply bg-[#00852D];
 }
 
+.secondary__button {
+  @apply bg-[#FECF33] rounded-[6px] font-semibold text-white text-lg;
+}
+
+.secondary__button:hover {
+  @apply bg-[#e9c039];
+}
+
 /* Header */
 
 #top__navigation {
