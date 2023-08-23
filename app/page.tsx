@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import OnSaleSection from '../components/home/OnSaleSection'
 import CategoriesSection from '@/components/home/CategoriesSection'
+import RecommendationSection from '@/components/home/RecommendationSection'
 
 const Home: React.FC = () => {
   return (
@@ -12,27 +13,7 @@ const Home: React.FC = () => {
       </section>
       <OnSaleSection />
       <CategoriesSection />
-      <section id='recommended__products__slider' className='pt-[32px]'>
-        <div className='container mx-auto'>
-          <div className='flex justify-between items-center mb-[24px]'>
-            <h2 className='text-[30px] font-semibold'>Odporúčame</h2>
-            <Link href='/'>zobraziť ďalšie produkty v akcii</Link>
-          </div>
-          <div className='product__slider'>
-            <div className='product__slider h-[411px] grid grid-cols-4 gap-[20px] mt-[24px]'>
-              <div className='h-full bg-slate-300'></div>
-              <div className='h-full bg-slate-300'></div>
-              <div className='h-full bg-slate-300'></div>
-              <div className='h-full bg-slate-300'></div>
-            </div>
-            <div className='product__slider__dots flex items-center justify-center gap-[10px] mt-[24px]'>
-              <button className='w-[16px] h-[16px] rounded-full bg-[#191919]'></button>
-              <button className='w-[16px] h-[16px] rounded-full bg-[#c4c4c4]'></button>
-              <button className='w-[16px] h-[16px] rounded-full bg-[#c4c4c4]'></button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <RecommendationSection />
       <section id='newsletter'>
         <div className='container mx-auto flex gap-[30px] h-[219px] my-[48px]'>
           <div className='flex-1 flex items-center justify-center h-full bg-cyan-300'>
