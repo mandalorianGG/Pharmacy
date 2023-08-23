@@ -78,6 +78,8 @@ body {
   @apply text-secondary;
 }
 
-/* .keen-slider__slide {
-  overflow: visible !important;
-} */
+/* Homepage */
+
+.brands {
+  @apply container mx-auto grid items-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-[65px] h-[140px] mb-[53px];
+}
