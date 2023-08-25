@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import React from 'react'
-import styles from '../styles/ProductSlide.module.css'
+import Image from 'next/image';
+import React from 'react';
+import styles from '../styles/ProductSlide.module.css';
 
 const ProductSlide = () => {
   return (
@@ -54,7 +54,7 @@ const ProductSlide = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductSlide
+export default ProductSlide;
