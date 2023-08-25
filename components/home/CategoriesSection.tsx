@@ -1,7 +1,6 @@
 import categories from '@/constants/categories';
 import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import Category from '../Category';
 
 const CategoriesSection = () => {
   return (
@@ -24,21 +23,7 @@ const CategoriesSection = () => {
           className='grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-[24px]'
         >
           {categories.map((category) => (
-            <div className='relative'>
-              <Image
-                src={category.src}
-                alt={category.alt}
-                width={231}
-                height={219}
-                className='w-full h-auto'
-              />
-              <div className='absolute py-4 w-full bg-black/80 bottom-0 text-white text-center'>
-                <p className='font-semibold text-lg mb-1'>{category.title}</p>
-                <Link href='/' className='text-sm hover:underline'>
-                  zobraziť kategóriu
-                </Link>
-              </div>
-            </div>
+            <Category category={category} />
           ))}
         </div>
       </div>
